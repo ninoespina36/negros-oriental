@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 		// Image animations
 		images.forEach((image, i) => {
-			const directionX = (direction === 'to-right' ? window.outerWidth : -window.outerWidth) + 200;
+			const directionX = direction === 'to-right' ? (window.outerWidth + 200) : (-window.outerWidth - 200);
 			const rotateDeg = direction === 'to-right' ? 45 : -45;
 
 			 const tl = gsap.timeline({
@@ -114,6 +114,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 		// Text animations
 		texts.forEach((text, i) => {
+			const yValue = window.innerWidth > 991 ? "40%" : "20%";
 			gsap.timeline({
 				scrollTrigger: {
 					trigger: sectionSelector,
@@ -125,7 +126,7 @@ document.addEventListener('DOMContentLoaded', () => {
 					invalidateOnRefresh: true,
 				}
 			})
-			.to(text, { duration: 0.33, opacity: 1, y: "40%" })
+			.to(text, { duration: 0.33, opacity: 1, y: yValue})
 			.to(text, { duration: 0.33, opacity: 0, y: "0%" }, 0.66);
 		});
 

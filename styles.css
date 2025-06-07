@@ -27,6 +27,11 @@ section.intro._2 .split .word {
   text-align: center;
   color: #FFF;
 }
+@media (max-width: 767px) {
+  section.intro._2 .split .word {
+    font-size: 25px;
+  }
+}
 section.intro .split {
   opacity: 0;
   display: flex;
@@ -47,6 +52,11 @@ section.intro .split .word {
   font-weight: 800;
   font-size: 40px;
 }
+@media (max-width: 767px) {
+  section.intro .split .word {
+    font-size: 20px;
+  }
+}
 section.intro .main-headline {
   font-size: 80px;
   text-transform: uppercase;
@@ -55,11 +65,22 @@ section.intro .main-headline {
   color: #00b2ff;
   text-shadow: 0 0 0px #00b2ff, 0 0 0px #00b2ff, 0 0 0px #00b2ff, 0 0 2px #00b2ff, 0 0 0px #00b2ff, 0 0 8px #00b2ff, 0 0 7px #00b2ff;
 }
+@media (max-width: 767px) {
+  section.intro .main-headline {
+    font-size: 40px;
+  }
+}
 section.intro .subheadline {
   color: #FFF;
   font-weight: 800;
   letter-spacing: 30px;
   text-shadow: 0 0 0px #fff, 0 0 0px #fff, 0 0 0px #fff, 0 0 2px #00b2ff, 0 0 0px #fff, 0 0 8px #fff, 0 0 2px #fff;
+}
+@media (max-width: 767px) {
+  section.intro .subheadline {
+    font-size: 10px;
+    letter-spacing: 15px;
+  }
 }
 section.intro .glow-green .word {
   -webkit-text-fill-color: #09f763;
@@ -128,6 +149,21 @@ section.intro .glow-orange .word {
     flex-direction: column-reverse;
   }
 }
+@media (max-width: 991px) {
+  .gallery-scroller-section .gallery-scroller._1 .panel {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 991px) {
+  .gallery-scroller-section .gallery-scroller._2 {
+    flex-direction: column;
+  }
+}
+@media (max-width: 991px) {
+  .gallery-scroller-section .gallery-scroller._2 .panel {
+    margin-top: 20px;
+  }
+}
 .gallery-scroller-section .gallery-scroller-background {
   position: absolute;
   top: 0;
@@ -182,6 +218,13 @@ section.outro {
   width: 450px;
   height: 80vh;
 }
+@media (max-width: 767px) {
+  .text-wrap {
+    width: 70vw;
+    height: 100%;
+    padding: 20px;
+  }
+}
 .text-wrap .panel-text {
   position: absolute;
   left: 0%;
@@ -197,10 +240,21 @@ section.outro {
 .text-wrap .panel-text h3 {
   font-size: 30px;
 }
+@media (max-width: 767px) {
+  .text-wrap .panel-text h3 {
+    font-size: 20px;
+  }
+}
 .text-wrap .panel-text p {
   font-family: "Cedarville Cursive", cursive;
   font-size: 20px;
   line-height: 28px;
+}
+@media (max-width: 767px) {
+  .text-wrap .panel-text p {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 .p-wrap {
@@ -209,14 +263,10 @@ section.outro {
   max-height: 80vh;
   height: 100%;
 }
-@media (max-width: 991px) {
-  .p-wrap {
-    margin-top: 100px;
-  }
-}
 @media (max-width: 767px) {
   .p-wrap {
-    margin-top: 0px;
+    width: 70vw;
+    max-height: 100%;
   }
 }
 .p-wrap .panel {
